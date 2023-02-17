@@ -1,12 +1,9 @@
 // Import
+@import 'variables';
 @import 'form';
+@import 'signup';
+@import 'mobile';
 @import url(https://fonts.bunny.net/css?family=montserrat:300,400,600);
-
-// Variables
-$light-color: #f86032;
-$dark-color: #4d4d4d;
-$gray-color: #c4c4c4;
-$main-font: 'Montserrat', sans-serif;
 
 // Reset
 * {
@@ -49,7 +46,7 @@ p {
 a,
 a:visited {
     text-decoration: none;
-    color: #fff;
+    color: $white-color;
 }
 
 // Utility Classes
@@ -63,7 +60,7 @@ a:visited {
 .btn {
     display: inline-block;
     font-size: 18px;
-    color: #fff;
+    color: $white-color;
     background: $dark-color;
     padding: 13px 30px;
     border: none;
@@ -120,7 +117,7 @@ a:visited {
         }
         &-form {
             padding: 50px;
-            background: #fff;
+            background: $white-color;
             color: $dark-color;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;

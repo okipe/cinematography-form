@@ -19,3 +19,15 @@
         border-bottom: 2px solid #c4c4c4;  
     }
 }
+
+.form-sq-wh {
+    @extend %form;
+    input {
+        border: 1px solid $white-color;
+        background: $light-color;
+        color: $white-color;
+    }
+    ::placeholder {
+        color: $white-color;
+    }
+}

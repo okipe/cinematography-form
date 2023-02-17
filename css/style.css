@@ -1,12 +1,12 @@
 @import url(https://fonts.bunny.net/css?family=montserrat:300,400,600);
-.form-ln-gray {
+.form-sq-wh, .form-ln-gray {
   padding: 60px;
 }
-.form-ln-gray label {
+.form-sq-wh label, .form-ln-gray label {
   display: block;
   margin-bottom: 5px;
 }
-.form-ln-gray input {
+.form-sq-wh input, .form-ln-gray input {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
@@ -17,6 +17,63 @@
   border-bottom: 2px solid #c4c4c4;
 }
 
+.form-sq-wh input {
+  border: 1px solid #fff;
+  background: #f86032;
+  color: #fff;
+}
+.form-sq-wh ::placeholder {
+  color: #fff;
+}
+
+#signup {
+  color: #fff;
+}
+#signup h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+#signup .signup-form {
+  background: #f86032;
+  text-align: center;
+  border-radius: 5px;
+  width: 50%;
+  padding: 60px;
+  display: block;
+  margin: 0 auto;
+}
+#signup .signup-form h3 {
+  text-transform: uppercase;
+}
+#signup .signup-form form button {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .bk {
+    height: 100%;
+  }
+  #cine .cine-wrap {
+    grid-template-columns: 1fr;
+  }
+  #cine .cine-wrap-bk {
+    display: none;
+  }
+  #cine .cine-wrap-form {
+    padding: 0px;
+    border-radius: 5px;
+  }
+  #cine .cine-wrap h2 {
+    font-size: 1.5rem;
+  }
+  #signup .signup-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .form-ln-gray, .form-sq-wh {
+    padding: 20px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
